@@ -2,81 +2,83 @@
 @use "../../styles/mixin" as *;
 
 .page-container {
-  padding: 1rem;
+	padding: 1rem;
+	margin-bottom: 5.3125rem;
 }
 
 .logo {
-  height: 2rem;
+	height: 2rem;
 }
 
 .page-header {
-  font-size: 1.25rem;
-  margin-bottom: 0;
+	font-size: 1.25rem;
+	margin-bottom: 0;
 }
 
 .page-subheader {
-  color: gray;
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+	color: gray;
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
 }
 
 .main-form {
-  @include flexed(column, center, flex-start);
-  width: 100%;
+	@include flexed(column, center, flex-start);
+	width: 100%;
 }
 
 .form {
-  &__label {
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin: 0.5rem 0 0.25rem 0;
-  }
-  &__input {
-    width: 100%;
-    padding: 0.5rem 0;
-    border-radius: 4px;
-    border: 1px solid darken(lightgray, 10);
-  }
-  &__select {
-    width: 90%;
-    padding: 0.25rem 0;
-    border-radius: 4px;
-    border: 1px solid darken(lightgray, 10);
-    background-color: $color-global;
-    margin-bottom: 0.5rem;
-  }
+	&__label {
+		font-size: 0.8rem;
+		font-weight: 400;
+		margin: 0.5rem 0 0.25rem 0;
+	}
+	&__input {
+		width: 100%;
+		padding: 0.5rem 0;
+		border-radius: 4px;
+		border: 1px solid darken(lightgray, 10);
+	}
+	&__select {
+		width: 90%;
+		padding: 0.25rem 0;
+		border-radius: 4px;
+		border: 1px solid darken(lightgray, 10);
+		background-color: $color-global;
+		margin-bottom: 0.5rem;
+	}
 }
 .select-container {
-  @include flexed(row, space-between, center);
-  width: 100%;
+	@include flexed(row, space-between, center);
+	width: 100%;
 }
 .hint {
-  width: 6%;
-  border-radius: 50%;
-  background-color: lighten($color-secondary-background, 10);
-  color: $color-global;
-  border: none;
-  text-align: center;
-  cursor: pointer;
-  padding: 0.05rem;
+	width: 4.5%;
+	border-radius: 50%;
+	background-color: lighten($color-secondary-background, 10);
+	color: $color-global;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	padding: 0.05rem;
+	margin-bottom: 0.6875rem;
 }
 
 .field-explanation {
-  font-size: 0.7rem;
-  color: rgb(37, 37, 37);
-  margin: 0.25rem 0 0 0;
+	font-size: 0.7rem;
+	color: rgb(37, 37, 37);
+	margin: 0.25rem 0 0 0;
 }
 
 .submit-btn {
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  background-color: lighten($color-secondary-background, 10);
-  color: $color-global;
-  border-radius: 4px;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	background-color: lighten($color-secondary-background, 10);
+	color: $color-global;
+	border-radius: 4px;
 }
 
 .btn-box {
-  margin: 1.5rem 0;
-  @include flexed(row, flex-end, center);
-  width: 100%;
+	margin: 1.5rem 0;
+	@include flexed(row, flex-end, center);
+	width: 100%;
 }
