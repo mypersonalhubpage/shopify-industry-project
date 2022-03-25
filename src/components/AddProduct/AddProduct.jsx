@@ -1,9 +1,12 @@
 import "./AddProduct.scss";
-
+import tag from "../../assets/logo/tag.png";
 function AddProduct() {
   return (
     <>
-      <img src="" alt="" />
+      <div className="img-container">
+        <img src={tag} className="tag" alt="tag image" />
+      </div>
+
       <p className="add-subheader">Add your first product</p>
       <p className="add-description">
         Add physical items, digital downloads, services, or anything else you
