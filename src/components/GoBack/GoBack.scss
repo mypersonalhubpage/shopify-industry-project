@@ -10,5 +10,8 @@
 		font-size: 15px;
 		font-weight: 600;
 		color: $color-secondary-background;
+		&--white {
+			color: $color-global;
+		}
 	}
 }
