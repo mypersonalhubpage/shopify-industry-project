@@ -6,7 +6,7 @@ function Form() {
 	return (
 		<>
 			<div className='page-container'>
-				<GoBack />
+				<GoBack color='black' />
 				<img className='logo' src={logo} alt='shopify logo' />
 				<h2 className='page-header'>Tell us a bit more!</h2>
 				<form className='main-form'>
