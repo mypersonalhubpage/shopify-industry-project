@@ -7,8 +7,7 @@
 
 	&__wrapper {
 		z-index: 2;
-		padding: 16px 28px;
-		margin-bottom: 85px;
+		padding: 16px 30px 100px 30px;
 		position: relative;
 	}
 	&__top-wrapper {
@@ -23,15 +22,17 @@
 	&__text {
 		color: $color-global;
 		font-size: 28px;
+		margin: 0;
+		font-weight: 600;
 	}
-	&__name {
-		margin-bottom: -26px;
+	&__text {
+		margin-bottom: 20px;
 	}
 
 	&__cards {
 		@include flexed(row, space-between, center);
 		flex-wrap: wrap;
-		gap: 26px;
+		gap: 20px;
 	}
 
 	&__detail1 {
@@ -40,9 +41,16 @@
 		right: 0;
 	}
 
+	&__detail2 {
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		bottom: 95px;
+	}
+
 	&__scroll-text-wrapper {
 		@include flexed(column, center, center);
-		margin-top: 24px;
+		margin-top: 28px;
 		gap: 8px;
 	}
 	&__scroll-text {
@@ -51,5 +59,52 @@
 		font-size: 15px;
 		font-weight: 600px;
 		line-height: 0.9;
+	}
+
+	&__financial-title,
+	&__financial-text {
+		margin: 0;
+		color: $color-global;
+	}
+	&__financial-title {
+		margin-top: 28px;
+		margin-bottom: 6px;
+		font-size: 28px;
+		font-weight: 600;
+	}
+	&__financial-text {
+		font-size: 15px;
+		margin-bottom: 28px;
+	}
+
+	&__financial-card {
+		background-color: $color-global;
+		border-radius: 4px;
+		padding: 10px 24px;
+		margin-bottom: 20px;
+	}
+	&__financial-card-title,
+	&__financial-card-text,
+	&__learn-more-text {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	&__financial-card-title {
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+	&__financial-card-text {
+		color: #777777;
+	}
+	&__learn-more-wrapper {
+		@include flexed(row, flex-end, center);
+		gap: 4px;
+		cursor: pointer;
+	}
+	&__learn-more-text {
+		color: $color-secondary-background;
+		border-bottom: 1px solid $color-secondary-background;
 	}
 }
