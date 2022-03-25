@@ -2,59 +2,60 @@
 @use "../../styles/mixin" as *;
 
 .add-container {
-  margin: 1rem 1rem 2rem 1rem;
-  padding: 1rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  @include flexed(column, center, flex-start);
-  background-color: $color-global;
+	margin: 1rem 1rem 2rem 1rem;
+	padding: 1rem;
+	box-shadow: rgba(99, 99, 99, 0.2) 0rem 0.125rem 0.5rem 0rem;
+	@include flexed(column, center, flex-start);
+	background-color: $color-global;
+	margin-bottom: 5.3125rem;
 }
 .test-container {
-  width: 100%;
+	width: 100%;
 }
 
 .img-container {
-  @include flexed(row, center, center);
-  width: 100%;
+	@include flexed(row, center, center);
+	width: 100%;
 }
 
 .add {
-  &-subheader {
-    font-weight: 600;
-    font-size: 0.875rem;
-    margin: 1rem 0 0.25rem 0;
-  }
-  &-description {
-    font-size: 0.8rem;
-    margin: 0.25rem 0 1.5rem 0;
-  }
+	&-subheader {
+		font-weight: 600;
+		font-size: 0.875rem;
+		margin: 1rem 0 0.25rem 0;
+	}
+	&-description {
+		font-size: 0.8rem;
+		margin: 0.25rem 0 1.5rem 0;
+	}
 }
 .btn {
-  width: 40%;
-  background-color: lighten($color-secondary-background, 10);
-  border: none;
-  font-size: 0.875rem;
-  padding: 0.75rem 2rem;
-  border-radius: 4px;
-  color: $color-global;
-  text-decoration: none;
+	width: 40%;
+	background-color: lighten($color-secondary-background, 10);
+	border: none;
+	font-size: 0.875rem;
+	padding: 0.75rem 2rem;
+	border-radius: 4px;
+	color: $color-global;
+	text-decoration: none;
 }
 
 .button-container {
-  width: 100%;
-  @include flexed(column, center, center);
-  text-align: center;
+	width: 100%;
+	@include flexed(column, center, center);
+	text-align: center;
 }
 .juststart-subheader {
-  font-weight: 600;
-  font-size: 0.875rem;
-  margin: 1rem 0 1rem 0;
+	font-weight: 600;
+	font-size: 0.875rem;
+	margin: 1rem 0 1rem 0;
 }
 
 .tag {
-  height: 7rem;
+	height: 7rem;
 }
 
 .learnmore {
-  color: $color-secondary-background;
-  margin-top: 0.5rem;
+	color: $color-secondary-background;
+	margin-top: 0.5rem;
 }

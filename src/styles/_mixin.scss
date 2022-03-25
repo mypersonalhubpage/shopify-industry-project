@@ -1,21 +1,21 @@
-$tablet-width: 768px;
-$desktop-width: 1280px;
+$tablet-width: 48rem;
+$desktop-width: 80rem;
 
 @mixin flexed($direction, $justify, $align) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
 }
 
 @mixin tablet {
-  @media (min-width: $tablet-width) {
-    @content;
-  }
+	@media (min-width: $tablet-width) {
+		@content;
+	}
 }
 
 @mixin desktop {
-  @media (min-width: $desktop-width) {
-    @content;
-  }
+	@media (min-width: $desktop-width) {
+		@content;
+	}
 }
