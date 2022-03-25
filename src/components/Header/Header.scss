@@ -1,0 +1,25 @@
+@use "../../styles/colors" as *;
+@use "../../styles/mixin" as *;
+
+.setup-bar {
+  @include flexed(row, space-between, center);
+  margin: 0 2rem 2rem 0.5rem;
+}
+
+.header {
+  margin: 1rem;
+  &-title {
+    margin: 2rem 0.5rem 0 0.5rem;
+    font-size: 1.3rem;
+  }
+  &-more {
+    color: darkblue;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  &-subheader {
+    color: gray;
+    margin: 0;
+    padding: 0;
+  }
+}
