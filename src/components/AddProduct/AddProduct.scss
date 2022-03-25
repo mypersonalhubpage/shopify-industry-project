@@ -7,6 +7,9 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   @include flexed(column, center, flex-start);
 }
+.test-container {
+  width: 100%;
+}
 
 .img-container {
   @include flexed(row, center, center);
@@ -32,8 +35,14 @@
   padding: 0.75rem 2rem;
   border-radius: 4px;
   color: $color-global;
+  text-decoration: none;
 }
 
+.button-container {
+  width: 100%;
+  @include flexed(row, center, center);
+  text-align: center;
+}
 .juststart-subheader {
   font-weight: 600;
   font-size: 0.875rem;
