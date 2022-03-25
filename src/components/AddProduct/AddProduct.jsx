@@ -14,13 +14,23 @@ function AddProduct() {
           Add physical items, digital downloads, services, or anything else you
           dream up.
         </p>
-        <button className="btn">Add product</button>
-        <p className="juststart-subheader">
-          Just getting started? Let us help you find the right fit!
+        <div className="button-container">
+          <Link className="btn add-product__btn">Add product</Link>
+        </div>
+        <p className="add-subheader">
+          Not sure which product&#40;s&#41; to add?
+        </p>
+        <p className="add-description">
+          Fill out the questionnaire below and we'll recommend the right ones
+          for you.
         </p>
         <div className="button-container">
           <Link to="/form" className="getstart-btn btn">
-            Explore
+            Find Product&#40;s&#41;
+          </Link>
+          <Link className="learnmore" to="/">
+            {" "}
+            Learn more
           </Link>
         </div>
       </div>
