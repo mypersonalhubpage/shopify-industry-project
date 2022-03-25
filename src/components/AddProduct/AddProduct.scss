@@ -2,10 +2,11 @@
 @use "../../styles/mixin" as *;
 
 .add-container {
-  margin: 0 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   padding: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   @include flexed(column, center, flex-start);
+  background-color: $color-global;
 }
 .test-container {
   width: 100%;

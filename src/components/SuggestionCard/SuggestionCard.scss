@@ -22,14 +22,13 @@
 	}
 
 	&__img {
-		// margin-bottom: -20px;
 		height: 90px;
 		width: 100%;
-		// object-fit: cover;
 	}
 
 	&__add-wrapper {
 		@include flexed(row, center, center);
+		gap: 6px;
 	}
 	&__add {
 	}

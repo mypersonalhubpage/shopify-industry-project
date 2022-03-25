@@ -5,10 +5,12 @@ import AddProduct from "../../components/AddProduct/AddProduct";
 function Main() {
   return (
     <>
-      <Header />
-      <section className="add-container">
-        <AddProduct />
-      </section>
+      <div className="background">
+        <Header />
+        <section className="add-container">
+          <AddProduct />
+        </section>
+      </div>
     </>
   );
 }
