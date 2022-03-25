@@ -2,6 +2,12 @@
 @use "../../styles/mixin" as *;
 
 .footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 10;
 	&__border {
 		border-top: 1px solid $color-primary-text;
 	}

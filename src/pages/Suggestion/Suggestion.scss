@@ -3,8 +3,13 @@
 
 .suggestion {
 	background-color: $color-secondary-background;
+	// position: relative;
+
 	&__wrapper {
-		padding: 16px 26px;
+		z-index: 2;
+		padding: 16px 28px;
+		margin-bottom: 85px;
+		position: relative;
 	}
 	&__top-wrapper {
 		@include flexed(row, center, center);
@@ -21,5 +26,30 @@
 	}
 	&__name {
 		margin-bottom: -26px;
+	}
+
+	&__cards {
+		@include flexed(row, space-between, center);
+		flex-wrap: wrap;
+		gap: 26px;
+	}
+
+	&__detail1 {
+		position: absolute;
+		z-index: 0;
+		right: 0;
+	}
+
+	&__scroll-text-wrapper {
+		@include flexed(column, center, center);
+		margin-top: 24px;
+		gap: 8px;
+	}
+	&__scroll-text {
+		margin: 0;
+		color: $color-global;
+		font-size: 15px;
+		font-weight: 600px;
+		line-height: 0.9;
 	}
 }
