@@ -1,0 +1,14 @@
+@use "../../styles/colors" as *;
+@use "../../styles/mixin" as *;
+
+.back {
+	@include flexed(row, flex-start, center);
+	gap: 4px;
+	cursor: pointer;
+
+	&__text {
+		font-size: 15px;
+		font-weight: 600;
+		color: $color-secondary-background;
+	}
+}

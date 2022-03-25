@@ -4,6 +4,7 @@ import Main from "./pages/Main/Main";
 import FormPage from "./pages/FormPage/FormPage";
 import Suggestion from "./pages/Suggestion/Suggestion";
 import Footer from "./components/Footer/Footer";
+
 function App() {
 	return (
 		<div className='App'>
