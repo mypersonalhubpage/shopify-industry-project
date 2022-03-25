@@ -1,0 +1,25 @@
+@use "../../styles/colors" as *;
+@use "../../styles/mixin" as *;
+
+.suggestion {
+	background-color: $color-secondary-background;
+	&__wrapper {
+		padding: 16px 26px;
+	}
+	&__top-wrapper {
+		@include flexed(row, center, center);
+		width: 100%;
+	}
+	&__logo {
+		margin-right: auto;
+		margin-left: calc(50% - 98.328px);
+	}
+	&__name,
+	&__text {
+		color: $color-global;
+		font-size: 28px;
+	}
+	&__name {
+		margin-bottom: -26px;
+	}
+}
