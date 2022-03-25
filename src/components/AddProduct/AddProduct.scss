@@ -8,6 +8,7 @@
 	@include flexed(column, center, flex-start);
 	background-color: $color-global;
 	margin-bottom: 5.3125rem;
+	border-radius: 0.25rem;
 }
 .test-container {
 	width: 100%;
