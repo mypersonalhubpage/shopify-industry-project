@@ -29,7 +29,7 @@
 	}
 
 	&__cards {
-		@include flexed(row, space-between, center);
+		@include flexed(row, center, center);
 		flex-wrap: wrap;
 		gap: 1.25rem;
 	}
